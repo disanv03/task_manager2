@@ -1,0 +1,16 @@
+<% content_for(:title, 'about') %>
+
+<%= link_to('Back to Menu', menu_path, class: 'back-link') %><br />
+
+<div class="main about">
+  <h2>About</h2>
+
+  <p>Description of the Task Manager.</p>
+
+  <p>Created by <%= @created_by %></p>
+
+</div>
+
+<% content_for(:script) do%>
+  <script>alert('welcome')</script>
+<% end %>
